@@ -25,10 +25,19 @@ The training CLI accepts `--sampler ddim` as the reserved hook for the future DD
 ## Installation
 
 ```bash
+conda env create -f environment.yml
+conda activate cert-las
 pip install -e .
 ```
 
-The original experiments used the local `diffusers` environment from `diff_wm_certify`. If you are running on the same machine, you can also invoke the scripts with:
+If you already have a compatible PyTorch/CUDA environment, the pip requirements are also provided:
+
+```bash
+pip install -r requirements.txt
+pip install -e .
+```
+
+The original experiments also used the local `diffusers` environment from `diff_wm_certify`. If you are running on the same machine, you can invoke the scripts with:
 
 ```bash
 PYTHON=/data/home/Boheng/miniconda3/envs/diffusers/bin/python

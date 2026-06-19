@@ -10,9 +10,14 @@ requires-python = ">=3.9"
 dependencies = [
   "accelerate",
   "diffusers",
+  "huggingface-hub",
   "numpy",
+  "pandas",
+  "Pillow",
+  "safetensors",
   "scipy",
   "torch",
+  "torchvision",
   "tqdm",
   "transformers",
 ]
