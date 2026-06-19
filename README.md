@@ -25,17 +25,11 @@ The training CLI accepts `--sampler ddim` as the reserved hook for the future DD
 ## Installation
 
 ```bash
-conda env create -f environment.yml
-conda activate cert-las
-pip install -e .
-```
-
-If you already have a compatible PyTorch/CUDA environment, the pip requirements are also provided:
-
-```bash
 pip install -r requirements.txt
 pip install -e .
 ```
+
+Following the reference repositories, this repo keeps the public dependency spec in `requirements.txt`. For exact internal reproduction on this server, the latest full conda export is `diff_wm_certify/environment-diffusers-current.yml` as noted in the original script guide.
 
 The original experiments also used the local `diffusers` environment from `diff_wm_certify`. If you are running on the same machine, you can invoke the scripts with:
 
