@@ -1,0 +1,21 @@
+{
+  "sampler": "ddim",
+  "pretrained_model_name_or_path": "/data/home/Boheng/qly/data/stable-diffusion-v1-4",
+  "wm_model_name_or_path": "outputs/watermark/step_2000",
+  "clean_model_name_or_path": "/data/home/Boheng/qly/data/stable-diffusion-v1-4",
+  "frozen_model_name_or_path": "/data/home/Boheng/qly/data/stable-diffusion-v1-4",
+  "param_changes_csv": "/data/home/Boheng/qly/diff_wm_certify/sd14-finetune-catdog-10000/param_changes_20241029_175711.csv",
+  "output_dir": "outputs/watermark/step_2000-vsr0.01-ddim50",
+  "ddim_steps": 50,
+  "ddim_eta": 0.0,
+  "gen_num_images": 100,
+  "gen_trials": 20,
+  "eval_batch_size": 4,
+  "robust_noise": 0.01,
+  "eta": 1.0,
+  "alpha": 1e-6,
+  "ownership_alpha": 0.05,
+  "hit_threshold": 0.5,
+  "mixed_precision": "no",
+  "seed": 42
+}

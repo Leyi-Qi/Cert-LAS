@@ -1,0 +1,9 @@
+{
+  "input_csv": "outputs/watermark/step_2000-vsr0.01/PER_TRIAL.csv",
+  "wm_column": "wm_hit_rate",
+  "clean_column": "clean_hit_rate",
+  "output_dir": "outputs/watermark/step_2000-radius",
+  "alpha": 0.05,
+  "num_images": 100,
+  "num_thresholds": 100
+}

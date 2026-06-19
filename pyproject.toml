@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cert-las"
+version = "0.1.0"
+description = "Certified model ownership verification for text-to-image diffusion models"
+requires-python = ">=3.9"
+dependencies = [
+  "accelerate",
+  "diffusers",
+  "numpy",
+  "scipy",
+  "torch",
+  "tqdm",
+  "transformers",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
